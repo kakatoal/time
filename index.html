@@ -9,9 +9,12 @@
 
 <body>
     <style>
-        #box1, #box2, #box3, #box4 {
-            width: 50 px;
-            height: 50 px;
+        #box1,
+        #box2,
+        #box3,
+        #box4 {
+            width: 50px;
+            height: 50px;
             position: absolute;
             transition: .2s;
             opacity: 0;
@@ -55,13 +58,14 @@
     <div id="box2"></div>
     <div id="box3"></div>
     <div id="box4"></div>
-    <p id="Loading Failed!!"></p>
+    <p id="text">Loading Failed!!</p>
 
     <script>
         let box1 = document.querySelector("#box1");
         let box2 = document.querySelector("#box2");
         let box3 = document.querySelector("#box3");
         let box4 = document.querySelector("#box4");
+        let text = document.querySelector('#text');
 
         setTimeout(function () {
             box1.style.opacity = 1;
@@ -88,7 +92,7 @@
             box4.style.opacity = 1;
         }, 900)
 
-           setTimeout(function () {
+        setTimeout(function () {
             box1.style.opacity = 1;
             box2.style.opacity = 0;
             box3.style.opacity = 0;
@@ -113,7 +117,7 @@
             box4.style.opacity = 1;
         }, 2100)
 
-           setTimeout(function () {
+        setTimeout(function () {
             box1.style.opacity = 1;
             box2.style.opacity = 0;
             box3.style.opacity = 0;
@@ -138,7 +142,7 @@
             box4.style.opacity = 1;
         }, 3300)
 
-           setTimeout(function () {
+        setTimeout(function () {
             box1.style.opacity = 1;
             box2.style.opacity = 0;
             box3.style.opacity = 0;
@@ -163,7 +167,7 @@
             box4.style.opacity = 1;
         }, 4500)
 
-           setTimeout(function () {
+        setTimeout(function () {
             box1.style.opacity = 1;
             box2.style.opacity = 0;
             box3.style.opacity = 0;
@@ -188,14 +192,14 @@
             box4.style.opacity = 1;
         }, 5700)
 
-        setTimeout(function() {
-             box1.style.opacity = 0;
+        setTimeout(function () {
+            box1.style.opacity = 0;
             box2.style.opacity = 0;
             box3.style.opacity = 0;
             box4.style.opacity = 0;
             text.style.opacity = 1;
         }, 6000)
-        
+
 
 
 
